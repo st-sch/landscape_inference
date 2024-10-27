@@ -15,10 +15,39 @@ This repository contains the Python code for fitness landscape inference, valida
 | [`fig1E.ipynb`](fig1E.ipynb) | low-dimensional and comparable visualization of fitness (sub-) landscapes using force-directed network layout |
 | [`figS3A.ipynb`](figS3A.ipynb) | validation of specific epistasis models obtained from maximum-likelihood estimation (using cross-validation) and from Walsh-Hadamard transform (using bandpass filters) |
 
+## Dependencies
+
+- [`pandas`](https://pandas.pydata.org/)
+- [`NumPy`](https://numpy.org/)
+- [`SciPy`](https://scipy.org/)
+- [`igraph`](https://igraph.org/)
+- [`random`](https://docs.python.org/fr/3/library/random.html)
+- [`sparray`](https://github.com/jesolem/sparray)
+- [`mavenn`](https://github.com/jbkinney/mavenn)
+- [`Matplotlib`](https://matplotlib.org/)
+
+Some dependencies are tricky to get installed. Below is the code I used to build a conda environment that did the job for me:
+```
+conda create --name <your_env_name>
+conda activate <your_env_name>
+conda install python==3.7.2
+pip install tensorflow
+pip install mavenn
+pip install notebook
+pip install python-igraph
+```
+
+A spec file ([exact build](ucla_landscape.txt) or [yml](ucla_landscape.yml)) for this environment is also included. These can be installed using
+```
+conda create --name <your_env_name> --file ucla_landscape.txt
+```
+or
+```
+conda env create -f ucla_landscape.yml
+```
+
 ## Code references
 
-These are the code used in this project that were written by other people (besides standard Python libraries):
+Some of the code here is borrowed from elsewhere:
 
-- [sparray](https://github.com/jesolem/sparray): used to deal with arrays of *a priori* unknown number of dimensions
-- [mavenn](https://github.com/jbkinney/mavenn): used for fitting global epistasis models
-- [this Github repo](https://github.com/mfazampour/medphys_ct_us_registration/blob/master/spine_flownet/rigid_transform_3D-master/rigid_transform_3D.py): used for matching of low-dimensional landscape embeddings
+- [code from here](https://github.com/mfazampour/medphys_ct_us_registration/blob/master/spine_flownet/rigid_transform_3D-master/rigid_transform_3D.py): used to find the best match between two point clouds
