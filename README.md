@@ -21,3 +21,4 @@ These are the code used in this project that were written by other people (besid
 
 - [sparray](https://github.com/jesolem/sparray): used to deal with arrays of *a priori* unknown number of dimensions
 - [mavenn](https://github.com/jbkinney/mavenn): used for fitting global epistasis models
+- [this Github repo](https://github.com/mfazampour/medphys_ct_us_registration/blob/master/spine_flownet/rigid_transform_3D-master/rigid_transform_3D.py): used for matching of low-dimensional landscape embeddings
