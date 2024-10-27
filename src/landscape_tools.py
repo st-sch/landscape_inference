@@ -15,6 +15,10 @@ def seqlist(q=2, L=1):
         seqs.append(seq)
     return [tuple(seq) for seq in seqs]
 
+def dH(s1, s2):
+    # compute Hamming distance between two genotype sequences
+    return sum([1 for a, b in zip(s1, s2) if a!=b])
+
 class EmpLS:
     # a class for empirical landscapes
 
