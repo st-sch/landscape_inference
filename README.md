@@ -1,4 +1,4 @@
-# landscape_inference
+# landscape inference from sequence data
 
 This repository contains the Python code for fitness landscape inference, validation and visualization used in our manuscript on a heterogeneously epistatic antibody fitness landscape promoting evolvability. It reproduces the plots shown in Figs. 1, S3 and S4.
 
@@ -23,6 +23,7 @@ This repository contains the Python code for fitness landscape inference, valida
 - [`igraph`](https://igraph.org/)
 - [`random`](https://docs.python.org/fr/3/library/random.html)
 - [`sparray`](https://github.com/jesolem/sparray)
+- [`SymPy`](https://www.sympy.org/en/index.html)
 - [`mavenn`](https://github.com/jbkinney/mavenn)
 - [`Matplotlib`](https://matplotlib.org/)
 
@@ -35,6 +36,7 @@ pip install tensorflow
 pip install mavenn
 pip install notebook
 pip install python-igraph
+pip install sympy
 ```
 
 A spec file ([exact build](ucla_landscape.txt) or [yml](ucla_landscape.yml)) for this environment is also included. These can be installed using
