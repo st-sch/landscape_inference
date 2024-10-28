@@ -1,3 +1,9 @@
+# my own files
+src/sparray.py
+output/
+!output/*.pdf
+!output/*.jpg
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
