@@ -14,6 +14,7 @@ This repository contains the Python code for fitness landscape inference, valida
 | [`fig1D_S4AB.ipynb`](fig1D_S4AB.ipynb) | low-dimensional visualization of fitness landscape using force-directed network layout |
 | [`fig1E.ipynb`](fig1E.ipynb) | low-dimensional and comparable visualization of fitness (sub-) landscapes using force-directed network layout |
 | [`figS3A.ipynb`](figS3A.ipynb) | validation of specific epistasis models obtained from maximum-likelihood estimation (using cross-validation) and from Walsh-Hadamard transform (using bandpass filters) |
+| [`figS3B.ipynb`](figS3B.ipynb) | correlation of (log-)enrichments and fitness from various models (specific epistasis from maximum-likelihood, specific epistasis from Walsh-Hadamard transform, global epistasis from maximum-likelihood) |
 
 ## Dependencies
 
